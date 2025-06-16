@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrap">
+          <h1>
+            <a href="/"><img src="./img/logo.png" alt="파킹메이트" /></a>
+          </h1>
+          <nav id="gnb">
+            <ul>
+              <li><a href="#">서비스 소개</a></li>
+              <li><a href="#">주차장 찾기</a></li>
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">고객지원</a></li>
+              <li><a href="#">로그인/회원가입</a></li>
+            </ul>
+          </nav>
+          <div class="icons">
+            <a href="#"><i class="xi-bell-o"></i></a>
+            <a href="#"><i class="xi-bars"></i></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 1 -->
+        <section class="sec_main">
+          <div class="wrap">
+            <div class="main_text">
+              <h2>
+                처음 가는 주차장,<br />
+                이제는 불안하지 않게
+              </h2>
+              <p>주차장 정보 사진과 리뷰로 미리 확인하세요!</p>
+              <form class="search_box" action="" method="get">
+                <input
+                  class="search_txt"
+                  type="text"
+                  name="search"
+                  placeholder="목적지 또는 주소명을 입력해주세요."
+                />
+                <button type="button" class="search_icon">
+                  <i class="xi-search"></i>
+                </button>
+              </form>
+            </div>
+            <div class="main_visual">
+              <img src="./img/main_visual.jpg" alt="main visual" />
+            </div>
+          </div>
+        </section>
+        <!-- 2 -->
+        <section class="sec2">
+          <div class="wrap">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              <h3><span>파킹메이트</span>, 어떤 점이 특별할까요?</h3>
+            </div>
+            <div class="txt_up">
+              <div class="left_img">
+                <img src="./img/sec2-thumbnail1.jpg" alt="썸네일" />
+              </div>
+              <div class="txt">
+                <h4>주차장 검색</h4>
+                <p>
+                  위치, 요금, 운영시간 등<br />
+                  실시간 정보로 나에게 딱 맞는 주차장을
+                  <br />
+                  빠르게 찾을 수 있어요.
+                </p>
+                <a href="#" class="btn">바로가기</a>
+              </div>
+            </div>
+            <div class="txt_up">
+              <div class="txt">
+                <h4>운전자 커뮤니티</h4>
+                <p>
+                  초보도, 베테랑도 모두 환영!
+                  <br />주차 고민부터 운전 팁까지 자유롭게 소통해보세요.
+                </p>
+                <a href="#" class="btn">바로가기</a>
+              </div>
+              <div class="left_img">
+                <img src="./img/sec2-thumbnail2.jpg" alt="썸네일" />
+              </div>
+            </div>
+            <div class="txt_up">
+              <div class="left_img">
+                <img src="./img/sec2-thumbnail3.jpg" alt="썸네일" />
+              </div>
+              <div class="txt">
+                <h4>AI 기반 주차장 추천</h4>
+                <p>
+                  리뷰, 이용 패턴, 현재 위치 등을 바탕으로<br />
+                  당신에게 꼭 맞는 주차장을 똑똑하게 골라드려요.
+                </p>
+                <a href="#" class="btn">바로가기</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 3 -->
+        <section class="sec3">
+          <div class="wrap">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              <h3>누적 후기 15,000개 이상</h3>
+            </div>
+            <div class="box-wrap">
+              <div class="box">
+                <i class="xi-building"></i>
+                <div class="stat-box">
+                  <span class="count">0</span>
+                  <p>등록된 주차장 수</p>
+                </div>
+              </div>
+              <div class="box">
+                <i class="xi-chart-bar"></i>
+                <div class="stat-box">
+                  <span class="count">0</span><span>%</span>
+                  <p>정확도 만족도</p>
+                </div>
+              </div>
+              <div class="box">
+                <i class="xi-comment"></i>
+                <div class="stat-box">
+                  <span class="count">0</span>
+                  <p>후기 등록 건수</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 4 -->
+        <section class="sec4">
+          <div class="wrap">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              <h3>자주 묻는 질문</h3>
+              <div class="qna-wrap">
+                <div class="faq-list">
+                  <details class="accordion">
+                    <summary>주차장 요금은 어디서 확인하나요?</summary>
+                    <p>상세페이지에서 실시간으로 확인할 수 있어요.</p>
+                  </details>
+                  <details class="accordion">
+                    <summary>난이도 정보는 어떻게 확인하나요?</summary>
+                    <p>사용자 리뷰와 입출구 사진을 기반으로 표시돼요.</p>
+                  </details>
+                  <details class="accordion">
+                    <summary>커뮤니티는 어떻게 이용하나요?</summary>
+                    <p>로그인 없이도 질문하고 답변을 확인할 수 있어요.</p>
+                  </details>
+                  <a href="#" class="btn">전체 FAQ 보기</a>
+                </div>
+                <a href="#" class="qna-box">
+                  <i class="xi-speech"></i>
+                  <p>1:1 문의하기</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer_top">
+          <ul>
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+        </div>
+        <div class="footer_bottom">
+          <p>&copy;2025 Parking mate Inc. All Right Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/aos_counting.js"></script>
+    <script src="./js/gsap.js"></script>
+  </body>
+</html>
