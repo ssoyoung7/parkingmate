@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url(../common.css);
+/* 메인 */
+main {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* section 공통 */
+
+section {
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+/* footer */
+
+.sec1 {
+  width: 100%;
+  height: 1080px;
+}
+
+.sec1 > h3 {
+  font-size: 60px;
+  width: fit-content;
+  height: fit-content;
+  margin: 300px auto;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.sec1 > h3 > span {
+  font-weight: 800;
+  color: var(--main-color);
+}
+
+.sec2 {
+  width: 100vw;
+  margin-left: 260px;
+
+}
+
+.box_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  display: flex;
+  overflow: visible;
+}
+
+.swiper-slide {
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  transition: transform 0.3s;
+  position: relative;
+  transform: translateX(0);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.2);
+}
+
+.txt {
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
+}
+
+.txt > h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.txt > p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.txt span {
+  color: var(--main-color);
+  font-weight: 700;
+}

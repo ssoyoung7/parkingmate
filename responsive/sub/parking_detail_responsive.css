@@ -1,0 +1,413 @@
+@charset 'utf-8';
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .wrap{
+    width: 95%;
+  }
+  /* sec */
+  section {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* sec1 */
+
+  .sec1 > .img_section {
+    flex-direction: column;
+    height: clamp(300px, 125vh, 500px);
+    margin-bottom: 20px;
+  }
+
+  #map {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .right_imgbox {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    gap: 4px;
+  }
+
+  .right_imgbox > .imgbox > .pic {
+    border-radius: 8px;
+  }
+
+  /* light_box */
+
+  .text_section > h3 {
+    font-size: clamp(24px, 1.6rem, 30px);
+  }
+
+  .text_section > h3 + span {
+    font-size: clamp(16px, 1rem, 18px);
+  }
+
+  .hashtag {
+    flex-wrap: wrap;
+    margin: 20px 0 10px;
+  }
+
+  .hashtag span {
+    font-size: clamp(12px, 0.3rem, 14px);
+  }
+
+  .info-wrap {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info:last-child {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .info-wrap > .info > div {
+    width: 100%;
+  }
+
+  .info:last-child > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon_wrap {
+    width: 210px;
+    height: fit-content;
+    margin-left: auto;
+  }
+
+  .nav_wrap {
+    width: 210px;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+
+  .nav_wrap > a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav_wrap > a > img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .icons > p {
+    font-size: clamp(12px, 0.8rem, 16px);
+  }
+  /* sec2 */
+
+  .sec2 {
+    margin-top: 60px;
+  }
+  .sec2title h3 {
+    font-size: clamp(24px, 1.6rem, 30px);
+  }
+
+  .sec2title > p {
+    font-size: clamp(12px, 0.6rem, 14px);
+  }
+
+  .sec2title > p > span {
+    font-size: clamp(14px, 0.8rem, 16px);
+  }
+
+  .review {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .review_area {
+    width: 100%;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .review_txt {
+    width: 100%;
+  }
+  .sec3 {
+    margin-top: 60px;
+  }
+}
+
+/* 테블릿 -sm */
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .wrap{
+    width: 95%;
+  }
+  /* sec */
+  section {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* sec1 */
+
+  .sec1 > .img_section {
+    flex-direction: column;
+    height: clamp(300px, 125vh, 500px);
+    margin-bottom: 20px;
+  }
+
+  #map {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .right_imgbox {
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 4px;
+    height: fit-content;
+  }
+
+  .right_imgbox > .imgbox > .pic {
+    border-radius: 8px;
+    height: fit-content;
+  }
+
+  /* light_box */
+
+  .text_section > h3 {
+    font-size: clamp(28px, 2rem, 30px);
+  }
+
+  .text_section > h3 + span {
+    font-size: clamp(18px, 1.2rem, 20px);
+  }
+
+  .hashtag {
+    flex-wrap: wrap;
+    margin: 20px 0 10px;
+  }
+
+  .hashtag span {
+    font-size: clamp(14px, 0.4rem, 18px);
+  }
+
+  .info-wrap {
+    flex-direction: column;
+  }
+  .info {
+    width: 100%;
+  }
+
+  .info:last-child {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .info-wrap > .info > div {
+    width: 100%;
+  }
+
+  .info:last-child > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon_wrap {
+    width: 210px;
+    height: fit-content;
+    margin-left: auto;
+  }
+
+  .nav_wrap {
+    width: fit-content;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+
+  .nav_wrap > a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav_wrap > a > img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .icons > p {
+    font-size: clamp(12px, 0.8rem, 16px);
+  }
+  /* sec2 */
+
+  .sec2 {
+    margin-top: 60px;
+  }
+  .sec2title h3 {
+    font-size: clamp(24px, 1.6rem, 30px);
+  }
+
+  .sec2title > p {
+    font-size: clamp(12px, 0.6rem, 14px);
+  }
+
+  .sec2title > p > span {
+    font-size: clamp(14px, 0.8rem, 16px);
+  }
+
+  .review {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .review_area {
+    width: 100%;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .review_txt {
+    width: 100%;
+  }
+  .sec3 {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1250px) {
+  .wrap{
+    width: 95%;
+  }
+  section {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* sec1 */
+
+  .sec1 > .img_section {
+    gap: 10px;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+
+  #map {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+  }
+
+  .right_imgbox {
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+  }
+
+  .right_imgbox > .imgbox > .pic {
+    border-radius: 8px;
+    height: calc(300px / 2);
+  }
+
+  /* light_box */
+
+  .text_section > h3 {
+    font-size: clamp(28px, 2rem, 30px);
+  }
+
+  .text_section > h3 + span {
+    font-size: clamp(18px, 1.2rem, 20px);
+  }
+
+  .hashtag {
+    flex-wrap: wrap;
+    margin: 20px 0 10px;
+  }
+
+  .hashtag span {
+    font-size: clamp(14px, 0.4rem, 18px);
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info:last-child {
+    width: 100%;
+  }
+
+  .info-wrap > .info > div {
+    width: 100%;
+  }
+
+  .info:last-child > div {
+    width: 100%;
+  }
+
+  .icon_wrap {
+    width: 210px;
+    height: fit-content;
+    margin-left: auto;
+  }
+
+  .nav_wrap {
+    width: 180px;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+
+  .nav_wrap > a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav_wrap > a > img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .icons > p {
+    font-size: clamp(12px, 0.8rem, 16px);
+  }
+  /* sec2 */
+
+  .sec2 {
+    margin-top: 60px;
+  }
+  .sec2title h3 {
+    font-size: clamp(24px, 1.6rem, 30px);
+  }
+
+  .sec2title > p {
+    font-size: clamp(12px, 0.6rem, 14px);
+  }
+
+  .sec2title > p > span {
+    font-size: clamp(14px, 0.8rem, 16px);
+  }
+
+  .user_id {
+    width: fit-content;
+  }
+
+  .review_area {
+    width: clamp(900px, 10vw, 900px);
+    gap: 20px;
+  }
+
+  .review_txt {
+    width: clamp(800px, 60vw, 850px);
+    margin-left: 0;
+    margin-left: auto;
+  }
+  .sec3 {
+    margin-top: 60px;
+  }
+}

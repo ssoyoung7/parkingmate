@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파킹메이트</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/sub/parking_detail.css" />
+    <link
+      rel="stylesheet"
+      href="../../responsive/sub/parking_detail_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9bb78db61ad401830a949c2e54a70682"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 반응형 css -->
+    <link
+      rel="stylesheet"
+      href="../responsive/sub/search_result_responsive.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrap">
+          <h1>
+            <a href="/"><img src="../../img/logo.png" alt="파킹메이트" /></a>
+          </h1>
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="../service_info.html">서비스 소개</a>
+              </li>
+              <li><a href="../search/search.html">주차장 찾기</a></li>
+              <li><a href="../community/community.html">커뮤니티</a></li>
+              <li><a href="../support/support.html">고객지원</a></li>
+              <li><a href="../login_page.html">로그인/회원가입</a></li>
+            </ul>
+          </nav>
+          <div class="icons">
+            <a href="#"><i class="xi-bell-o"></i></a>
+            <a href="#"><i class="xi-bars"></i></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="wrap">
+          <section class="sec1">
+            <div class="img_section">
+              <div id="map"></div>
+              <div class="right_imgbox">
+                <div class="imgbox">
+                  <img
+                    src="../../img/sub/search/thumb (1).jpg"
+                    alt="주차장 사진"
+                    data-src="../../img/sub/search/thumb (1).jpg"
+                    class="pic"
+                  />
+                </div>
+                <div class="imgbox">
+                  <img
+                    src="../../img/sub/search/thumb (2).jpg"
+                    alt="주차장 사진"
+                    data-src="../../img/sub/search/thumb (2).jpg"
+                    class="pic"
+                  />
+                </div>
+                <div class="imgbox">
+                  <img
+                    src="../../img/sub/search/thumb (3).jpg"
+                    alt="주차장 사진"
+                    data-src="../../img/sub/search/thumb (3).jpg"
+                    class="pic"
+                  />
+                </div>
+                <div class="imgbox">
+                  <img
+                    src="../../img/sub/search/thumb (4).jpg"
+                    alt="주차장 사진"
+                    data-src="../../img/sub/search/thumb (4).jpg"
+                    class="pic"
+                  />
+                </div>
+              </div>
+              <!-- 라이트룸 -->
+              <div id="light_box">
+                <img
+                  src="../../img/sub/search/thumb (1).jpg"
+                  alt="큰 이미지"
+                  id="light_box_img"
+                />
+              </div>
+            </div>
+            <div class="text_section">
+              <h3>안양역 1노상공영주차장</h3>
+              <span>경기 안양시 만안구 만안로223번길 9-2</span>
+              <div class="hashtag">
+                <span>주차 공간이 넓어요</span>
+                <span>평일 혼잡</span>
+                <span>입출구가 넓어요</span>
+                <span>주말 혼잡</span>
+              </div>
+              <div class="info-wrap">
+                <div class="info">
+                  <p class="info-title">기본정보</p>
+                  <div><span>운영시간</span><span>10:00~22:00</span></div>
+                  <div><span>결제방식</span><span>카드</span></div>
+                  <div>
+                    <span>출입방식</span><span>지상 자주식 | 지하 기계식</span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="info-title">주차요금</p>
+                  <div><span>무료 출차시간</span><span>입차 후 5분</span></div>
+                  <div><span>기본</span><span>30분 900원</span></div>
+                  <div><span>추가</span><span>10분당 400원</span></div>
+                </div>
+                <div class="info">
+                  <div>
+                    <p class="info-title">편의시설</p>
+                    <div class="icon_wrap">
+                      <div class="icons">
+                        <img
+                          class="icon"
+                          src="../img/electrical_services.svg"
+                        />
+                        <p>총 -- 개</p>
+                      </div>
+                      <div class="icons">
+                        <img
+                          class="icon"
+                          src="../img/electrical_services.svg"
+                        />
+                        <p>총 -- 개</p>
+                      </div>
+                      <div class="icons">
+                        <img
+                          class="icon"
+                          src="../img/electrical_services.svg"
+                        />
+                        <p>총 -- 개</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="info-title">내비 바로가기</p>
+                    <div class="nav_wrap">
+                      <a href="#"
+                        ><img src="../img/sub/search/tmap.png" alt="티맵"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="../img/sub/search/navermap.png"
+                          alt="네이버맵"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="../img/sub/search/kakaomap.png"
+                          alt="카카오맵"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sec2">
+            <div class="sec2title">
+              <h3>리뷰</h3>
+              <p>총<span>30</span>개의 후기</p>
+            </div>
+            <div class="review_wrap">
+              <div class="review">
+                <div class="user_id">
+                  <div class="user_img"></div>
+                  <div class="user_name">
+                    <p>주차의 신</p>
+                    <span>자동차</span>
+                  </div>
+                </div>
+                <div class="review_area">
+                  <div class="review_img">
+                    <img src="../img/sub/search/thumb (1).jpg" alt="리뷰사진" />
+                  </div>
+                  <p class="review_txt">리뷰나오는 곳</p>
+                </div>
+              </div>
+
+              <div class="review">
+                <div class="user_id">
+                  <div class="user_img"></div>
+                  <div class="user_name">
+                    <p>자리하나만요</p>
+                    <span>자동차</span>
+                  </div>
+                </div>
+                <div class="review_area">
+                  <p class="review_txt">리뷰글 한줄 두줄 세줄까지</p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="user_id">
+                  <div class="user_img"></div>
+                  <div class="user_name">
+                    <p>주차하는오랑이</p>
+                    <span>자동차</span>
+                  </div>
+                </div>
+                <div class="review_area">
+                  <div class="review_img">
+                    <img src="../img/sub/search/thumb (1).jpg" alt="리뷰사진" />
+                  </div>
+                  <p class="review_txt">
+                    머라고머라고리뷰쓰는글<br />리뷰머라고머라고두줄
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="user_id">
+                  <div class="user_img"></div>
+                  <div class="user_name">
+                    <p>불법주차</p>
+                    <span>자동차</span>
+                  </div>
+                </div>
+                <div class="review_area">
+                  <p class="review_txt">
+                    리뷰머라고머라고머라고<br />리뷰머라고마러
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="user_id">
+                  <div class="user_img"></div>
+                  <div class="user_name">
+                    <p>이중주차킬러</p>
+                    <span>자동차</span>
+                  </div>
+                </div>
+                <div class="review_area">
+                  <p class="review_txt">리뷰나오는곳</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sec3">
+            <div class="wrap">
+              <h3>주변 공영주차장</h3>
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../img/sub/search/thumb (1).jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/sub/search/thumb (1).jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/sub/search/thumb (1).jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/sub/search/thumb (1).jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/sub/search/thumb (1).jpg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="../../js/parking_detail.js"></script>
+  </body>
+</html>

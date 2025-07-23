@@ -108,6 +108,7 @@ section {
 body {
   line-height: 1;
   font-family: "SUIT", sans-serif;
+  color: var(--bk-001);
 }
 ol,
 ul {
@@ -159,15 +160,16 @@ textarea {
   --wt-000: #ffffff;
 
   /* font-size */
-  --font-size12: 12px;
-  --font-size14: 14px;
-  --font-size16: 16px;
-  --font-size18: 18px;
-  --font-size20: 20px;
-  --font-size24: 24px;
-  --font-size24: 24px;
-  --font-size28: 28px;
-  --font-size30: 30px;
-  --font-size36: 36px;
-  --font-size60: 60px;
+  --font-size12: 0.75rem;
+  --font-size14: 0.875rem;
+  --font-size16: 1rem;
+  --font-size18: 1.125rem;
+  --font-size20: 1.25rem;
+  --font-size24: 1.5rem;
+  --font-size26: 1.625rem;
+  --font-size28: 1.75rem;
+  --font-size30: 1.875rem;
+  --font-size32: 2rem;
+  --font-size36: 2.25rem;
+  --font-size60: 3.75rem;
 }

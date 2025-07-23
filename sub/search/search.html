@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파킹메이트 검색창</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/sub/search.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9bb78db61ad401830a949c2e54a70682"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="../../responsive/sub/search_resposive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrap">
+          <h1>
+            <a href="/"><img src="../../img/logo.png" alt="파킹메이트" /></a>
+          </h1>
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="../service_info.html">서비스 소개</a>
+              </li>
+              <li><a href="./search.html">주차장 찾기</a></li>
+              <li><a href="../community/community.html">커뮤니티</a></li>
+              <li><a href="../support/support.html">고객지원</a></li>
+              <li><a href="../login_page.html">로그인/회원가입</a></li>
+            </ul>
+          </nav>
+          <div class="icons">
+            <a href="#"><i class="xi-bell-o"></i></a>
+            <a href="#"><i class="xi-bars"></i></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="sec1">
+          <form class="search_box" action="" method="get">
+            <input
+              class="search_txt"
+              type="text"
+              name="search"
+              placeholder="목적지 또는 주소명을 입력해주세요."
+            />
+            <button type="button" class="search_icon">
+              <i class="xi-search"></i>
+            </button>
+          </form>
+          <div id="map"></div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer_top">
+          <ul>
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+        </div>
+        <div class="footer_bottom">
+          <p>&copy;2025 Parking mate Inc. All Right Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../../js/search.js"></script>
+  </body>
+</html>

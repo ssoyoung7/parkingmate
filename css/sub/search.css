@@ -1,0 +1,53 @@
+@charset 'utf-8';
+@import url(../common.css);
+
+.sec1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.search_box {
+  width: 600px;
+  height: 50px;
+  background-color: rgb(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 888;
+}
+
+#map {
+  width: 99vw;
+  height: 84vh;
+  position: relative;
+}
+
+.search_txt {
+  width: 600px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  font-size: var(--font-size16);
+}
+
+.search_icon {
+  border: none;
+  background-color: transparent;
+}
+
+.search_icon i {
+  font-size: var(--font-size24);
+  color: var(--main-color);
+  cursor: pointer;
+}

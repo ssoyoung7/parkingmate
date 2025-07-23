@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파킹메이트 로그인</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/sub/login_page.css" />
+    <link rel="stylesheet" href="../responsive/sub/login_responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrap">
+          <h1>
+            <a href="/"><img src="../img/logo.png" alt="파킹메이트" /></a>
+          </h1>
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="./service_info.html">서비스 소개</a>
+              </li>
+              <li><a href="./search/search.html">주차장 찾기</a></li>
+              <li><a href="./community/community.html">커뮤니티</a></li>
+              <li><a href="./support/support.html">고객지원</a></li>
+              <li><a href="./login_page.html">로그인/회원가입</a></li>
+            </ul>
+          </nav>
+          <div class="icons">
+            <a href="#"><i class="xi-bell-o"></i></a>
+            <a href="#"><i class="xi-bars"></i></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="wrap">
+          <section class="sec_login">
+            <h3>로그인</h3>
+            <form action="#" class="login_form">
+              <label for="user_id">
+                <input
+                  type="text"
+                  name="user_id"
+                  class="user_name"
+                  placeholder="아이디"
+                  required
+                />
+              </label>
+              <label for="user_pw">
+                <input
+                  type="password"
+                  name="user_pw"
+                  class="user_pw"
+                  placeholder="비밀번호"
+                  required
+                />
+              </label>
+              <label for="user_check" class="rmb_id">
+                <input type="checkbox" checked />아이디 저장하기
+              </label>
+              <button type="button" class="login_btn">로그인</button>
+              <div class="login_bottom">
+                <span><a href="#">아이디찾기</a></span>
+                <span><a href="#">비밀번호찾기</a></span>
+                <span><a href="#">회원가입</a></span>
+              </div>
+            </form>
+
+            <div class="login_form2">
+              <h4>간편로그인</h4>
+              <div class="login_etc">
+                <a href="#"><i class="xi-kakaotalk"></i></a>
+                <a href="#"><i class="xi-naver"></i></a>
+                <a href="#"><i class="xi-apple"></i></a>
+                <a href="#"><i class="xi-google"></i></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer_top">
+          <ul>
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+        </div>
+        <div class="footer_bottom">
+          <p>&copy;2025 Parking mate Inc. All Right Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
